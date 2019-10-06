@@ -1,0 +1,325 @@
+section,body,html{
+  width: 100%;
+}
+.important,.overlay-content{
+  justify-items: center;
+  display: grid;
+}
+.cont{
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: 2rem auto;
+}
+h2,h3,h4{
+  font-family: Alegreya;
+  text-align: center
+}
+.teachers h3{
+  padding-top: 1rem;
+  font-size: 30px;
+}
+.teachers h4{
+  padding-top: 1rem;
+  font-size: 30px;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.important{
+  padding-top:4rem;
+}
+
+/*all teachers image*/
+.allTeacher{
+  height: fit-content;
+}
+.allTeacher > img{
+  border-radius: 5px !important;
+}
+
+/*overlay*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  margin-top: 30px;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/*image*/
+.image{
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+img{
+  border-radius: 50% !important;
+  width: 100%;
+  height: 100%;
+}
+
+/*responsive*/
+
+/*overlay and little guru*/
+@media screen and (min-width:1055px){
+  .overlay-content{
+    grid-template-columns: auto auto auto auto auto;
+  }
+}
+@media screen and (max-width:1054px) and (min-width: 640px){
+  .overlay-content{
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    width: 640px;
+  }
+  .guru>.image{
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width:639px){
+  .overlay-content{
+    margin: 0 auto;
+    width: 300px;
+  }
+  .guru>.image{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/*teachers*/
+@media screen and (min-width:640px){
+  /*teachers*/
+  .teachers{
+    margin-bottom: 1rem;
+    height: 100vh;
+
+  }
+  .bottle{
+    margin-bottom: 2rem;
+    margin-top: 0.2rem;
+    width: calc(50% - 4px);
+    height: 80%;
+    float: left;
+  }
+  .container{
+    padding: 1rem;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .pagi{
+    border-right: 2px solid rgb(255, 191, 0);
+  }
+  .petang{
+    border-left: 2px solid rgb(255, 191, 0);
+  }
+}
+@media screen and (max-width:639px){
+  .pagi{
+    border-bottom: 2px solid rgb(255, 191, 0);
+  }
+  .petang{
+    border-top: 2px solid rgb(255, 191, 0);
+  }
+  .container{
+    padding: 1rem;
+  }
+  .bottle{
+    width: 90%;
+    margin:0 auto;
+  }
+}
+/*important people*/
+@media screen and (min-width:980px){
+  .important{
+    margin: 0 auto;  
+    width: 960px;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width:979px) and (min-width:640px){
+  .important{
+    margin: 0 auto;  
+    width: 630px;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width:639px){
+  .important,.overlay-content{
+    margin: 0 auto;  
+    width: 200px;
+  }
+  .container>div{
+    width: 150px;
+    height: 150px;
+  }  
+}
+
+/*all teacher pics*/
+@media screen and (min-width:720px){
+  .allTeacher{
+    width: 700px;
+    margin: 1.5rem auto 5rem auto;
+  }
+} 
+@media screen and (max-width:719px) and (min-width:480px){
+  .allTeacher{
+    width: 450px;
+    margin: 6rem auto 6rem auto;
+  }
+} 
+@media screen and (max-width:479px){
+  .allTeacher{
+    width: 310px;
+    margin: 6rem auto 6rem auto;
+  }
+} 
+
+/*bigimage*/
+@media screen and (min-width:691px){
+  .bigimg{
+    width: 70vw;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width:690px){
+  .bigimg{
+    width: 90%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+.bigimg>img{
+  border-radius: 5px !important;
+}
+.laying {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+/*menu*/
+h3{
+  font-size:30px; 
+  margin: 0;
+}
+#menu{
+  position: fixed;
+}
+header{
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  line-height: 73px;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: transparent;
+  transition: ease-in-out 0.35s;
+}
+.tuppleware{
+  position: relative;
+  display: flex;
+  height: 70px;
+  border-bottom: 1px solid #E6EAEA;
+}
+.h{
+  display: block;
+  position: absolute;
+  top: 21px;
+  left: 50%;
+  width: auto;
+  height: 23px;
+  line-height: normal;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.pad{
+  padding: 0 1rem;
+}
+.r{
+  display: flex;
+  justify-content: flex-end;
+  flex: 1
+}
+/*sidenav*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#a52a2a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(252 , 159,0);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

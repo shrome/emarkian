@@ -1,0 +1,107 @@
+section{
+  margin:0;
+  top:0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h2{
+  text-align: center;
+}
+/*this is the header section*/
+header{
+  margin:0;
+  top:0;
+  position: relative;  
+}
+h1{
+  color: white !important;
+  font-family: 'Vollkorn', serif;
+  padding: 0 10rem;
+  font-weight: bold;
+  font-size: 100px;
+}
+.text{
+  padding: 0 10rem;
+}
+/*this is the menu section*/
+
+.back{
+  padding: 3% 0;
+}
+.card{
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card>a{
+  margin: 4%;
+}
+.card>a div{
+  display: flex;
+  box-sizing: content-box;
+  padding: 2rem;
+  width:15vw;
+  height: 19vh;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  scroll-snap-type: y mandatory;
+}
+/*TYPEWRITER*/
+.ftext {
+  animation: ftext;
+}
+
+.stext {
+  animation: stext;
+}
+
+.ftext, .stext {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  animation-duration: 60s;
+  animation-timing-function: steps(20, end);
+}
+
+.ftext::after, .stext::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes stext {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  
+  60%, 90% {
+    width: 21.2em;
+  }
+}
+
+@keyframes ftext {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 40% {
+    width: 17em;
+  }
+}
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
